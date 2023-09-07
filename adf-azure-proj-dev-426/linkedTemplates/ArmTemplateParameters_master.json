@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-azure-proj-dev-426"
+		},
+		"LS_AzureSqlDatabase_source_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sqldbserversource.database.windows.net;Initial Catalog=sqldbazureprojsource;User ID=sqldbserveruser"
+		},
+		"LS_AzureDataLakeStorage_sink_properties_typeProperties_url": {
+			"value": "https://strgadlsazureprojdev.dfs.core.windows.net"
+		},
+		"LS_AzureDataLakeStorage_sink_properties_typeProperties_tenant": {
+			"value": "196e54a6-ef50-440f-b4c2-e7caae5fcad4"
+		},
+		"LS_AzureDataLakeStorage_sink_properties_typeProperties_servicePrincipalId": {
+			"value": "b2ad05e6-c64a-4b88-99b2-4be17de35905"
+		},
+		"LS_AzureDataLakeStorage_source_properties_typeProperties_url": {
+			"value": "https://strgadlsazureprojsource.dfs.core.windows.net"
+		},
+		"LS_AzureDataLakeStorage_source_properties_typeProperties_tenant": {
+			"value": "196e54a6-ef50-440f-b4c2-e7caae5fcad4"
+		},
+		"LS_AzureDataLakeStorage_source_properties_typeProperties_servicePrincipalId": {
+			"value": "b2ad05e6-c64a-4b88-99b2-4be17de35905"
+		},
+		"LS_AzureKeyVault_src_dev_properties_typeProperties_baseUrl": {
+			"value": "https://kvazureprojdev.vault.azure.net/"
+		},
+		"RestService_source_properties_typeProperties_url": {
+			"value": "https://airlabs.co/api/v9/airlines"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}

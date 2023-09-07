@@ -1,0 +1,19 @@
+{
+	"name": "LS_AzureSqlDatabase_source",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sqldbserversource.database.windows.net;Initial Catalog=sqldbazureprojsource;User ID=sqldbserveruser",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AzureKeyVault_src_dev",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqldb-source-passwd"
+			}
+		}
+	}
+}
